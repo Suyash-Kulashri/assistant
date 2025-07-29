@@ -7,6 +7,7 @@ from langchain.schema import HumanMessage, AIMessage, SystemMessage
 
 # Load environment variables
 load_dotenv()
+st.set_page_config(page_title="Research Assistant", page_icon=":robot_face:", layout="wide")
 
 # Configure Gemini API
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") or st.text_input("Enter your Google API Key", type="password")
