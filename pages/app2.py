@@ -12,7 +12,7 @@ import io
 load_dotenv()
 
 # Configure Gemini API
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") or st.text_input("Enter your Google API Key", type="password")
 if not GOOGLE_API_KEY:
     st.error("Please set GOOGLE_API_KEY in your .env file")
     st.stop()
