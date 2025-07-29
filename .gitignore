@@ -1,0 +1,22 @@
+# Virtual environments
+env/
+venv/
+streamlit_venv/
+
+# Python compiled files
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+*.vscode/
+*.idea/
+
+# Dependency lock files
+pip-lock.txt
+
+# Local config files
+*.env
